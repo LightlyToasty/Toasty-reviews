@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Lightly Toasty</title>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <style>
+        body { 
+            background-color: #f4ecd8; 
+            background-image: radial-gradient(#d2b48c 0.5px, transparent 0.5px); 
+            background-size: 20px 20px;
+            font-family: 'Indie Flower', cursive;
+            color: #4a4a4a;
+            padding: 20px;
+            margin: 0;
+        }
+
+        .contact-container {
+            max-width: 600px;
+            margin: 60px auto;
+            background: #fffef0;
+            padding: 40px;
+            border: 1px solid #ddd;
+            box-shadow: 8px 8px 0px rgba(163, 193, 173, 0.4); /* Light blue shadow */
+            position: relative;
+            transform: rotate(0.5deg);
+        }
+
+        .tape-blue {
+            background-color: rgba(163, 193, 173, 0.7);
+            height: 35px;
+            width: 120px;
+            position: absolute;
+            top: -15px;
+            right: -20px;
+            transform: rotate(10deg);
+        }
+
+        h1 { border-bottom: 2px dashed #a3c1ad; padding-bottom: 10px; }
+
+        label { display: block; margin-top: 20px; font-weight: bold; }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #d2b48c;
+            background: #fafafa;
+            font-family: inherit;
+            box-sizing: border-box;
+        }
+
+        button {
+            margin-top: 25px;
+            background: #a3c1ad;
+            color: #2c3e50;
+            padding: 12px 25px;
+            border: 2px solid #2c3e50;
+            box-shadow: 4px 4px 0px #707070;
+            cursor: pointer;
+            font-family: inherit;
+            font-size: 1.1rem;
+        }
+
+        button:hover { background: #f4c430; transform: translate(-2px, -2px); box-shadow: 6px 6px 0px #707070; }
+
+        .back-link { display: block; text-align: center; margin-top: 20px; color: #707070; text-decoration: none; }
+    </style>
+</head>
+<body>
+
+    <div class="contact-container">
+        <div class="tape-blue"></div>
+        <h1>Drop a Suggestion</h1>
+        <p>Have an album that needs a review? Want to say hi? Send me a note below!</p>
+
+        <form action="https://formspree.io/f/meeoyzqo"" method="POST">
+            <label>Your Name:</label>
+            <input type="text" name="name" required placeholder="Master...">
+
+            <label>Your Email:</label>
+            <input type="email" name="_replyto" required placeholder="email@example.com">
+
+            <label>Album Suggestion / Message:</label>
+            <textarea name="message" rows="5" required placeholder="Tell me what to listen to!"></textarea>
+
+            <button type="submit">SEND TO TOASTY</button>
+        </form>
+    </div>
+
+    <a href="index.html" class="back-link">← Return to the Journal</a>
+
+</body>
+</html>

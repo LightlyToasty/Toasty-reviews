@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review | Midnight Crumbs</title>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <style>
+        body { margin: 0; background: #222; font-family: 'Indie Flower', cursive; color: white; overflow: hidden; }
+        
+        .slides-container {
+            height: 100vh;
+            overflow-y: scroll;
+            scroll-snap-type: y mandatory;
+            scroll-behavior: smooth;
+        }
+
+        .slide {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            scroll-snap-align: start;
+        }
+
+        img {
+            max-height: 85vh;
+            max-width: 80vw;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.8);
+            border: 8px solid #fffef0;
+        }
+
+        .nav-btn {
+            position: fixed;
+            background: #a3c1ad;
+            color: #2c3e50;
+            padding: 15px;
+            text-decoration: none;
+            font-weight: bold;
+            z-index: 100;
+            border: 2px solid #2c3e50;
+            box-shadow: 4px 4px 0px #707070;
+            cursor: pointer;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: inherit;
+        }
+
+        .nav-btn:hover { background: #f4ecd8; }
+        .back-home { top: 20px; left: 20px; width: auto; height: auto; padding: 10px 20px; }
+        .prev-arrow { top: 45%; right: 20px; }
+        .next-arrow { top: 55%; right: 20px; }
+
+        .hint {
+            position: fixed;
+            bottom: 15px;
+            width: 100%;
+            text-align: center;
+            font-size: 1.2rem;
+            color: #f4ecd8;
+        }
+    </style>
+</head>
+<body>
+
+    <a href="index.html" class="nav-btn back-home">← RETURN TO JOURNAL</a>
+    
+    <button class="nav-btn prev-arrow" onclick="scrollSlide(-1)">↑</button>
+    <button class="nav-btn next-arrow" onclick="scrollSlide(1)">↓</button>
+
+    <div class="hint">FLIP THE PAGE</div>
+
+    <div class="slides-container" id="slider">
+        <div class="slide"><img src="TheArtOfLoving1.png" alt="Slide 1"></div>
+        <div class="slide"><img src="TheArtOfLoving2.png" alt="Slide 2"></div>
+        <div class="slide"><img src="TheArtOfLoving3.png" alt="Slide 3"></div>
+        <div class="slide"><img src="TheArtOfLoving4.png" alt="Slide 4"></div>
+        <div class="slide"><img src="TheArtOfLoving5.png" alt="Slide 5"></div>
+    </div>
+
+    <script>
+        function scrollSlide(direction) {
+            const slider = document.getElementById('slider');
+            slider.scrollBy({
+                top: direction * window.innerHeight,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+
+</body>
+</html>

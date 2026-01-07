@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanks! | Lightly Toasty</title>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <style>
+        body { 
+            background-color: #f4ecd8; 
+            background-image: radial-gradient(#d2b48c 0.5px, transparent 0.5px); 
+            background-size: 20px 20px;
+            font-family: 'Indie Flower', cursive;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .thank-you-card {
+            background: #fffef0;
+            padding: 40px;
+            text-align: center;
+            border: 1px solid #ddd;
+            box-shadow: 10px 10px 20px rgba(0,0,0,0.1);
+            position: relative;
+            max-width: 400px;
+            transform: rotate(-2deg);
+        }
+
+        .tape-blue {
+            background-color: rgba(163, 193, 173, 0.8);
+            height: 30px;
+            width: 100px;
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%) rotate(2deg);
+        }
+
+        h1 { color: #2c3e50; margin-top: 10px; }
+        p { font-size: 1.2rem; color: #707070; }
+
+        .back-btn {
+            display: inline-block;
+            margin-top: 20px;
+            text-decoration: none;
+            color: #2c3e50;
+            font-weight: bold;
+            border-bottom: 2px solid #a3c1ad;
+        }
+
+        .back-btn:hover { color: #f4c430; border-color: #f4c430; }
+    </style>
+</head>
+<body>
+
+    <div class="thank-you-card">
+        <div class="tape-blue"></div>
+        <h1>Message Delivered!</h1>
+        <p>Your suggestion has been added to the toaster. I'll listen soon!</p>
+        <p>🍞✨</p>
+        <a href="index.html" class="back-btn">Back to the Journal</a>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lightly Toasty | Toasty Reviews</title>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <style>
+        body { 
+            background-color: #f4ecd8; 
+            background-image: radial-gradient(#d2b48c 0.5px, transparent 0.5px); 
+            background-size: 20px 20px;
+            font-family: 'Indie Flower', cursive; /* Updated font */
+            color: #4a4a4a;
+            padding: 20px;
+            margin: 0;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            background: #fffef0;
+            border: 1px solid #ddd;
+            box-shadow: 2px 5px 15px rgba(0,0,0,0.05);
+            max-width: 700px;
+            margin: 40px auto;
+            position: relative;
+            transform: rotate(-0.5deg);
+        }
+
+        .site-logo {
+            max-width: 200px;
+            height: auto;
+            margin-bottom: 15px;
+            border-radius: 50%;
+            border: 5px solid #fffef0;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .tape-blue {
+            background-color: rgba(163, 193, 173, 0.7);
+            height: 35px;
+            width: 120px;
+            position: absolute;
+            top: -15px;
+            left: -30px;
+            transform: rotate(-15deg);
+            z-index: 10;
+        }
+
+        .journal-container { max-width: 800px; margin: auto; }
+
+        .review-card {
+            background: #fff;
+            padding: 30px;
+            margin-bottom: 60px;
+            box-shadow: 8px 8px 0px rgba(210, 180, 140, 0.3);
+            border-radius: 15px 15px 5px 5px;
+            border: 2px solid #e0d0b0;
+            position: relative;
+        }
+
+        .review-card h2 { border-bottom: 2px solid #a3c1ad; display: inline-block; padding-bottom: 5px; }
+
+        .rating-toast {
+            background: #f4c430;
+            padding: 5px 10px;
+            font-weight: bold;
+            border-radius: 3px;
+            font-size: 0.9rem;
+        }
+
+        nav { text-align: center; margin-bottom: 20px; }
+        nav a { color: #707070; text-decoration: none; margin: 0 15px; font-weight: bold; border-bottom: 1px dashed #a3c1ad; }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="#">Archives</a>
+        <a href="https://www.instagram.com/lightlytoasty/" target="_blank">About Lightly Toasty</a>
+	<a href="contact.html">Contact</a>    </nav>
+
+    <header>
+        <div class="tape-blue"></div>
+        <img src="LOGO.jpg" alt="Lightly Toasty Logo" class="site-logo">
+        <h1 style="margin:0; letter-spacing: 4px;">TOASTY REVIEWS</h1>
+        <p style="color: #707070;">The home for all my music reviews, updates, and more!</p>
+    </header>
+
+    <div class="journal-container">
+        <div class="review-card">
+            <span class="rating-toast">CRUNCH LEVEL: 4/5</span>
+            <a href="review.html" style="text-decoration: none; color: inherit;">
+                <h2>Album: The Art of Loving by Olivia Dean (Album Review)</h2>
+            </a>
+            <p><em>Recorded on: Jan 2026</em></p>
+            <p>Click the title to flip through the journal.</p>
+        </div>
+    </div>
+
+</body>
+</html>
